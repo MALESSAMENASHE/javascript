@@ -4,7 +4,7 @@ var obj=[1,3,4]
 var boole= true;
 var nul =null;
 var un = "hii"[5] ;
-let x=_;
+let x = symbol();
 
 console.log(typeof(str))
 console.log(typeof(num))
