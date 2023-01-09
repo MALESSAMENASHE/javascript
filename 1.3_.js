@@ -1,0 +1,1 @@
+//mdn date.prototype.getday()
