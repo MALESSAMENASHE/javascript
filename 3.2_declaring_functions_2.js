@@ -17,10 +17,10 @@ console.log(welcome());
 ​
 const welcome2 = welcome => {return 'Welcome to Appleseeds Bootcamp!'};
 console.log(welcome2());
-​
+
 const power = a => result = Math.pow(a, 2);
 console.log(power(2));
-​
+
 const power2 = a => {
 let myNumber = a;
 let result = Math.pow(myNumber, 2);
