@@ -40,11 +40,12 @@ const newReleases = [
   });
   
   console.log(arr);
-  
+
   let arr2 = newReleases.map(function (book) {
     return { id: book.id, title: book.title };
   });
   
   console.log(arr2);
+  
 
 

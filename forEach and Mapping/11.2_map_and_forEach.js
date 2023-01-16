@@ -1,40 +1,45 @@
-const newReleases = [
-    {
-      id: 70111470,
-      title: "Die Hard",
-      boxart: "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
-      uri: "http://api.netflix.com/catalog/titles/movies/70111470",
-      rating: [4.0],
-      bookmark: [],
-    },
-    {
-      id: 654356453,
-      title: "Bad Boys",
-      boxart: "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
-      uri: "http://api.netflix.com/catalog/titles/movies/70111470",
-      rating: [5.0],
-      bookmark: [{ id: 432534, time: 65876586 }],
-    },
-    {
-      id: 65432445,
-      title: "The Chamber",
-      boxart: "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
-      uri: "http://api.netflix.com/catalog/titles/movies/70111470",
-      rating: [4.0],
-      bookmark: [],
-    },
-    {
-      id: 675465,
-      title: "Fracture",
-      boxart: "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
-      uri: "http://api.netflix.com/catalog/titles/movies/70111470",
-      rating: [5.0],
-      bookmark: [{ id: 432534, time: 65876586 }],
-    },
-  ];    
+//1
 
-  let arr2 = newReleases.map(function (book) {
-    return { id: book.id, title: book.title };
-  });
-  
-  console.log(arr2);
+const arr=[1,2,3,4,5,6,7,8,9,10]
+// arr.forEach(function doubleValues(num,idx){
+//   arr[idx]=(num * num)
+// })
+
+// console.log(arr)
+
+//2
+// Write a function called onlyEvenValues which accepts an
+// array and returns a new array with only the even values in
+// the array passed to the function.
+
+// const arr2=[1,2,3,4,5,6,7,8,9,10];
+// function onlyEvenValues(array) {
+// 	finishedArray = []
+// 	array.forEach(function(num) {
+//   	if(!(num % 2)) {
+//     	finishedArray.push(num)
+//     }
+//   })
+//   return finishedArray;
+// }
+// console.log(onlyEvenValues(arr2)) 
+
+// 3. Write a function called showFirstAndLast which accepts
+// an array as an argument and returns a new array with only
+// the first and last elements from the function’s argument
+// array. The returned array should only contain elements
+// that are strings.
+
+// arr3=[4546,'kffk','8f8f5','jty','ikdfg']
+// function showFirstAndLast(arr){
+// 	const stringarr =[];
+// 	arr.forEach(function (x){
+		
+// 		if (typeof x === "string"){
+// 			stringarr.push(x);
+// 		}
+// 	})
+// 	return [stringarr[0],stringarr[stringarr.length-1]];
+// }
+// console.log(showFirstAndLast(arr3))
+
