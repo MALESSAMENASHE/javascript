@@ -8,6 +8,7 @@
 // returns the array of objects passed to it. with each object
 // now including the key and value passed to the function
 
+
 const arrA= [
     {
       A:15,
