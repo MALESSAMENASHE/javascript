@@ -43,14 +43,18 @@
 
 // Block 3
 
-// function funcB() {
-// let a = b = 0;
-// a++;
-// return a;
-// }
-// funcB();
-// console.log(typeof a);
-// console.log(typeof b);
+function funcB() {
+let a =0;
+b = 0;
+a++;
+console.log(typeof a);
+console.log(typeof b);
+
+return a;
+}
+funcB();
+console.log(typeof a);
+console.log(typeof b);
 
 // results: a-undefind - b-number -Because b-global -and can be print. a-is local and cannot be print out side the block.
 //to print a and b - we should get the console inside the function . 
@@ -88,12 +92,12 @@
 
 // Block 6
 
-function funcE() {
-console.log("Value of f in local scope: ", f);
-}
-console.log("Value of f in global scope: ", f);
-var f = 1;
-funcE();
+// function funcE() {
+// console.log("Value of f in local scope: ", f);
+// }
+// console.log("Value of f in global scope: ", f);
+// var f = 1;
+// funcE();
 
 //results: first f console will be : undefined  , the second will be un 1
 //...fix: put the declaration of f before the console , 
