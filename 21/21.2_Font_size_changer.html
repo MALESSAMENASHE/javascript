@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font size changer</title>
+</head>
+    <body>
+
+        <!-- <h1>Font size changer</h1> -->
+
+        <!-- Create a webpage that has some text and two buttons with ‘+’
+            and ‘-‘ Clicking the ‘+’ button should increase the text’s font-size
+            and clicking the ‘-‘ should decrease it.
+            Limit the font size to be between 6px and 100px. -->
+
+
+
+
+
+    <script>
+        const body =document.querySelector('body');
+        const btn =document.createElement('button');
+        const btn2 =document.createElement('button');
+        const text =document.createElement('h1');
+        const copmpstyle =getComputedStyle(text);
+        // copmpstyle.getPropertyValue()
+        
+        text.innerText="Font Size Changer";
+        btn.innerText ="+";
+        btn2.innerText ="-";
+        body.append(text,btn,btn2);
+        text.style.fontSize = '50px';
+        // let i=0;
+        // let arr =['6px','15','30','50','60','70',,'100']
+        
+        // function increase(){
+           
+    
+        
+
+        btn.addEventListener('click',function(event){
+            event.preventDefault();
+            const x='50px';
+            if(text.style.fontSize== '100px'){
+                return
+            }
+              text.style.fontSize = '100px' ;
+              return;
+        });
+
+        btn2.addEventListener('click',function(event){
+            event.preventDefault();
+            if(text.style.fontSize=='6px'){
+                return
+            }
+            return text.style.fontSize = '5px';
+        });
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
