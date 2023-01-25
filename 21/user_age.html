@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user aget</title>
+</head>
+<body>
+    <div >
+    <input type="number" id="input" placeholder="Please enter your Age">
+    <button type="submit" id="btn">submit</button>
+</div>
+
+    <script>
+        const age= document.querySelector("div");
+        const input= document.getElementById("input");
+        const btn = document.getElementById("btn");
+        // const num =document.getElementById('input').value;
+console.log(age, btn,input)
+        btn.addEventListener("click",function(event){
+            event.preventDefault();
+            const num =document.getElementById("input").value;
+            if(num>=18){
+                alert("you can drink appear");
+            return;
+            }
+            else{
+                alert("you’re too young");
+                 return;
+                console.log(num)
+            }
+        });
+
+
+
+    </script>
+    
+</body>
+</html>
+

@@ -8,7 +8,7 @@ let obj={
 
 function description(obj){
     let result = "";
-      return 'the book ${book.bookName} was written by ${obj.authorName} in the year ${obj.publishingYear}' ;
+      return 'the book ${this.bookName} was written by ${obj.authorName} in the year ${obj.publishingYear}' ;
 }
 
-console.log(description(book));
+console.log(description(obj));

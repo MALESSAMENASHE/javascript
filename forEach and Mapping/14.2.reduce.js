@@ -65,12 +65,12 @@ const countOnlyVowels = (str) => {
 // now including the key and value passed to the function
 
 
-const addKeyAndValue = (arrOfObj,key,value) => {
-    return arrOfObj.reduce((acc,cur)=>{
-        cur[key]=value;
-        acc.push(cur);
-        return acc;
-    },[])
-}
+// const addKeyAndValue = (arrOfObj,key,value) => {
+//     return arrOfObj.reduce((acc,cur)=>{
+//         cur[key]=value;
+//         acc.push(cur);
+//         return acc;
+//     },[])
+// }
 
-console.log(addKeyAndValue(arrA,'C',100))
+// console.log(addKeyAndValue(arrA,'C',100))
