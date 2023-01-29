@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #D5E3EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+    .hidden{
+        height: 20%;
+        /* position: absolute; */
+        visibility: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+<body>
+    <h1>welcome To Guess My Letter</h1>
+    <H2>??????????????</H2>
+    <p class="Situation">Guess a key </p>
+    <div class="hidden">
+        <p>Would you like to play again ?</p>
+        <button  class="yes" type="submit">Yes</button>
+    </div>
+    <h2>keys guessed</h2>
+    <p class="guess"></p>
+    
+
+    <script>
+         // ----------------------------------
+        const guess = document.querySelector(".guess");
+        const Situation= document.querySelector(".Situation");
+        const yes= document.querySelector(".yes");
+        const hidden= document.querySelector(".hidden");
+        const arr =[];
+
+        // --------functions--------------------------
+        function random(){
+            const alphabet = "abcdefghijklmnopqrstuvwxyz";
+            const char  = alphabet[Math.floor(Math.random() * alphabet.length)];
+            return char;
+        }   
+
+        let randomChar =random();
+
+        window.addEventListener('keydown', function(e) {
+        if(e.key === randomChar) {
+            Situation.innerText = "Right letter!";
+            Situation.style.color = "green" ;
+            hidden.style.visibility = "visible";
+        }else{
+            Situation.innerText = "nope, wrong letter";
+            Situation.style.color = "red" ;
+            arr.push(e.key)
+            guess.innerText = arr;
+    }
+});
+
+    yes.addEventListener("click",function(){
+        hidden.style.visibility = "hidden";
+        Situation.innerText = "Guess a key";
+        Situation.style.color = "black" ;
+        randomChar =random();
+        console.log(randomChar)
+    });
+
+
+    </script>
+    
+</body>
+</html>
