@@ -13,17 +13,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
-
-
+        background-color:teal;
+        margin: 0;
     }
-    .gameBord{
-
-
+    .gameBoard{
+        background-color: aliceblue;
+        width: 100vmin;
+        height: 100vmin;
+        display: grid;
+        grid-template-columns: repeat(25,1fr);
+        grid-template-rows: repeat(25,1fr);
+    }
+    .snake{
+        background-color: tan;
+        border: .25vmin solid black ;
+    }
+    .food{
+        background-color: red;
+        border: .25vmin solid black ;
     }
 </style>
 <body>
-    <div class="gameBord"></div>ord
-    
+    <div class="gameBoard"></div>ord
+    <script src="/23/snake/index.js"></script>
 </body>
 </html>
